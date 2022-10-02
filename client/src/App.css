@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows : 150px 150px 150px;
+  justify-content: center;
+}
+
+.box {
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.used {
+  cursor: not-allowed;
+}
+
+.exes {
+  margin-top: -35px;
+}
+
+.exes:after {
+  content: "\d7";
+  font-size: 150px; 
+  color: rgb(109, 21, 21);
+  text-align: center;
+}
+
+.ohs {
+  margin-top: -10px;
+}
+
+.ohs:after {
+  content: "\272A";
+  font-size: 100px; 
+  color: rgb(25, 34, 99);
+  text-align: center;
+}
+
+.table {
+  padding: 2%;
+}
