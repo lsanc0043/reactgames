@@ -21,6 +21,8 @@ function App() {
   return (
     <div className="App">
       <div className="game">
+        <h1>tic-tac-toe</h1>
+
         {showRecord ? (
           <Leaderboard playerScore={score} showLeaderboard={showLeaderboard} />
         ) : (

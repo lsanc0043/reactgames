@@ -1,7 +1,11 @@
 .App {
   text-align: center;
-  height: 100%;
-  width: 100%;
+  padding: 7%;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -17,6 +21,16 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.unused:hover {
+  animation-name: hoverbox;
+  animation-duration: 1s;
+}
+
+@keyframes hoverbox {
+  from {background-color: rgb(127, 193, 226);}
+  to {background-color: rgb(230, 146, 211);}
 }
 
 .used {

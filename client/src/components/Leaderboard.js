@@ -25,6 +25,7 @@ const LeaderBoard = ({ playerScore, showLeaderboard }) => {
 
   useEffect(() => {
     getPlayers();
+    // eslint-disable-next-line
   }, []);
 
   const handleAdd = async () => {
@@ -91,6 +92,8 @@ const LeaderBoard = ({ playerScore, showLeaderboard }) => {
                       <td>{player.score}</td>
                     </tr>
                   );
+                } else {
+                  return <></>;
                 }
               })
             ) : (

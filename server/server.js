@@ -43,6 +43,11 @@ app.post("/players", async (req, res) => {
   }
 });
 
+app.put("players/:id", (req, res) => {
+  console.log(req.params.id);
+  // console.log(req.body);
+});
+
 app.delete("/players", async (req, res) => {
   try {
     await db.any("DELETE FROM players", [true]);

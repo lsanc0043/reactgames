@@ -54,17 +54,10 @@ const Game = ({ BOXES, showLeaderboard }) => {
     } else {
       console.log("user", num);
       setUserBox([...userBox, num]);
-      // if (userMove === "O") {
       if (!testWinner([...userBox, num], "user")) {
         computerMove([...userBox, num]);
       }
     }
-    // }
-    // if (userMove === "X") {
-    // if (!testWinner([...userBox, num], "user")) {
-    //   computerMove([...userBox, num]);
-    // }
-    // }
   };
 
   const userSelection = (childData) => {
